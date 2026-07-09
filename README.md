@@ -88,12 +88,12 @@ bankassist-ai/
 
 ## 🚀 Development Status
 
-- ✅ Project Planning
-- ⏳ UI Design
-- ⏳ Frontend Development
-- ⏳ Backend Development
-- ⏳ Database Integration
-- ⏳ Deployment
+-  Project Planning
+-  UI Design
+-  Frontend Development
+-  Backend Development
+- Database Integration
+-  Deployment
 
 ---
 
