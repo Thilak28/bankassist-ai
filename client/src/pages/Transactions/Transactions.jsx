@@ -19,7 +19,7 @@ function Transactions() {
 
   const fetchTransactions = async () => {
   try {
-    const res = await api.get("/transactions");
+    const res = await api.get("/api/transactions");
     console.log("Transactions:", res.data);
     setTransactions(res.data);
   } catch (err) {
@@ -44,13 +44,13 @@ const editTransaction = (transaction) => {
 
     if (editingId) {
 
-      await api.put(`/transactions/${editingId}`, form);
+      await api.put(`/api/transactions/${editingId}`, form);
 
       setEditingId(null);
 
     } else {
 
-      await api.post("/transactions", form);
+      await api.post("/api/transactions", form);
 
     }
 
@@ -69,7 +69,7 @@ const editTransaction = (transaction) => {
 };
   const deleteTransaction = async (id) => {
   try {
-    await api.delete(`/transactions/${id}`);
+    await api.delete(`/api/transactions/${id}`);
     fetchTransactions();
   } catch (err) {
     console.log(err);
