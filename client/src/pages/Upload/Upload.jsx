@@ -24,7 +24,7 @@ if (!file) {
     const formData = new FormData();
     formData.append("statement", file);
 
-    const res = await api.post("/upload", formData, {
+    const res = await api.post("/api/upload", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
